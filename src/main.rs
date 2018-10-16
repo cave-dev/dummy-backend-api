@@ -99,10 +99,10 @@ fn gen_rand_search_result() -> String {
     let num_results: usize = random::<usize>() % MAX_NUMBER_RESULTS;
     for _ in 0..num_results {
         let mut types: Vec<String> = Vec::new();
-        let num_types: usize = random::<usize>() % SAMPLE_SITES.len();
+        let num_types: usize = random::<usize>() % MAX_SAMPLE_TYPES;
         for _ in 0..num_types {
-            let type_num: usize = random::<usize>() % SAMPLE_TYPES.len();
-            types.push(String::from(SAMPLE_TYPES[type_num]));
+            let type_index: usize = random::<usize>() % SAMPLE_TYPES.len();
+            types.push(String::from(SAMPLE_TYPES[type_index]));
         }
         let type_index: usize = random::<usize>() % SAMPLE_TYPES.len();
         let fn_index: usize = random::<usize>() % SAMPLE_FUNCTION_NAMES.len();
