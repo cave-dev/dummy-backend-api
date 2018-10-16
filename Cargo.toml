@@ -6,6 +6,7 @@ authors = ["Andrew Houts <ahouts4@gmail.com>"]
 [dependencies]
 rocket = "0.3.17"
 rocket_codegen = "0.3.17"
+rocket_cors = "0.3.0"
 lazy_static = "1.1.0"
 rand = "0.5.5"
 serde = "1.0.80"
